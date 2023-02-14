@@ -1,0 +1,126 @@
+:root{
+    --branco: #ffffff;
+    --preto: #011526;
+    --pretopreto: #000000;
+    --cinza: #c4c4c4;
+    --laranja: #FF5A36;
+    --verde: #2EB72B;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--preto);
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+.urna {
+    display: flex;
+    margin-left: 700px;
+    background-color: var(--cinza);
+    box-shadow: rgba(86, 89, 107, 0.459) -20px -10px 0px 1px inset;
+
+    
+}
+
+.tela {
+    width: 400px;
+    height: 300px;
+    margin: 25px 15px 25px 25px;
+    background-color: var(--branco);
+}
+
+.urna__tela {
+    width: 100%;
+    font-size: 150px;
+    font-weight: bold;
+    overflow: hidden;
+    max-width: 5ch
+}
+
+
+.urna__controle{
+    display: block;
+    margin-left: 50px;
+}
+
+
+.urna__button__container {
+    width: 400px;
+    margin-top: 35px;
+}
+
+.urna__button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    display:inline-block;
+    align-items: center;
+    margin: 3px;
+    color: var(--branco);
+    background-color: var(--pretopreto);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 13px;
+    border-radius: 3px;
+    box-shadow: rgb(86, 89, 107) -3px -3px 0px 1px inset;
+}
+
+.botao__gambe{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 327px;
+}
+
+/* #button__0{
+    margin-left: 10px;
+} */
+
+.urna__button:hover {
+    background-color: var(--preto);
+}
+
+.urna__button:active {
+    transform: scale(1.1);
+}
+
+.urna__button__principal {
+    margin: 50px 0;
+
+}
+
+.button__principal{
+    width: 100px;
+    height: 40px;
+    border: none;
+    box-shadow: rgba(86, 89, 107, 0.459) -3px -3px 0px 1px inset;
+    font-weight: bold;
+    margin: 3px;
+    text-transform: uppercase;
+}
+
+.button__principal:active{
+    transform: scale(1.1);
+}
+
+.button__branco{
+    background-color: var(--branco);
+}
+
+.button__corrigir{
+    background-color: var(--laranja);
+}
+
+.button__confirma{
+    background-color: var(--verde);
+}

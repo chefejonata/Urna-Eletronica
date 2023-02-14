@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Votação</title>
+</head>
+<body>
+    <main class="urna">
+        <div class="tela">
+            <h2 class="urna__tela"></h2>
+        </div>
+        
+        <div class="urna__controle">
+
+            <div class="urna__button__container">
+                <button class="urna__button" id="button__1" onclick=" insert('1')"> 1 </button>
+                <button class="urna__button" id="button__2" onclick=" insert('2')"> 2 </button>
+                <button class="urna__button" id="button__3" onclick=" insert('3')"> 3 </button>
+                <button class="urna__button" id="button__4" onclick=" insert('4')"> 4 </button>
+                <button class="urna__button" id="button__5" onclick=" insert('5')"> 5 </button>
+                <button class="urna__button" id="button__6" onclick=" insert('6')"> 6 </button>
+                <button class="urna__button" id="button__7" onclick=" insert('7')"> 7 </button>
+                <button class="urna__button" id="button__8" onclick=" insert('8')"> 8 </button>
+                <button class="urna__button" id="button__9" onclick=" insert('9')"> 9 </button>
+                <div class="botao__gambe">
+                <button class="urna__button" id="button__0" onclick=" insert('0')"> 0 </button>
+                </div>
+                
+            </div>
+            <div class="urna__button__principal">
+                <button class="button__principal button__branco " onclick="branco()">Branco</button>
+                <button class="button__principal button__corrigir" onclick="corrige()">Corrige</button>
+                <button class="button__principal button__confirma" onclick="confirmar()">Confirma</button>
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+    
+</body>
+<script src="./script.js"></script>
+</html>
